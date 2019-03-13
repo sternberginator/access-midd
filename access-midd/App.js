@@ -23,12 +23,12 @@ export default class App extends Component<{}> {
             zoomEnabled={true}
             scrollEnabled={true}>
             <MapboxGL.PointAnnotation
-               id={midd.title}
-               title={midd.title}
+               id={midd.name}
+               title={midd.name}
                selected={true}
                coordinate={midd.coord}>
                <MapboxGL.Callout
-                  title={midd.title}/>
+                  title={midd.name}/>
             </MapboxGL.PointAnnotation>
           </MapboxGL.MapView>
       </View>
